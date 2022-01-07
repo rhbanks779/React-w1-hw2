@@ -1,0 +1,63 @@
+.container{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas: 
+        "bed1 liveroom kit"
+        "bed1 liveroom kit"
+        "bath1 liveroom kit"
+        "bed2 bath2 bed3";
+}
+.cell{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 35px;
+}
+.container > .kit{
+    border-style: none;
+    background-color: yellow;
+    grid-area: kit;
+
+}
+.container > .liveroom{
+    border-style: none;
+    background-color: tan;
+    grid-area: liveroom;
+}
+.oven{
+    border-style: none;
+    background-color: red;
+    
+}
+.sink{
+    border-style: none;
+    background-color: brown;
+   
+}
+
+.container > .bath1{
+    grid-area: bath1;
+    border-style: none;
+    background-color: green;
+}
+.container > .bath2{
+    grid-area: bath2;
+    border-style: none;
+    background-color: green;
+}
+.container > .bed1{
+    grid-area: bed1;
+    border-style: none;
+    background-color: blue;
+}
+.container > .bed2{
+    grid-area: bed2;
+    border-style: none;
+    background-color: blue;
+}
+.container > .bed3{
+    grid-area: bed3;
+    border-style: none;
+    background-color: blue;
+}
